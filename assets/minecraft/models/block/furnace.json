@@ -1,0 +1,24 @@
+{
+	"credit": "by cheharka",
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"texture": "block/furnace",
+		"face": "block/furnace",
+		"particle": "block/cobblestone"
+	},
+	"elements": [
+		{
+			"name": "furnace",
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 8], "texture": "#face", "cullface": "north"},
+				"east": {"uv": [8, 0, 16, 8], "texture": "#texture", "cullface": "east"},
+				"south": {"uv": [8, 0, 16, 8], "texture": "#texture", "cullface": "south"},
+				"west": {"uv": [8, 0, 16, 8], "texture": "#texture", "cullface": "west"},
+				"up": {"uv": [0, 8, 8, 16], "texture": "#texture", "cullface": "up"},
+				"down": {"uv": [8, 8, 16, 16], "texture": "#texture", "cullface": "down"}
+			}
+		}
+	]
+}

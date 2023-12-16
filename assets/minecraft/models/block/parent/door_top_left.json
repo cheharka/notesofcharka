@@ -1,0 +1,18 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "#door"
+	},
+	"elements": [
+		{	"from": [0, 0, 0],
+			"to": [3, 16, 16],
+			"faces": {
+				"up":    {"uv": [11.5, 0, 10, 8], "texture": "#door", "cullface": "up"},
+				"north": {"uv": [1.5, 0, 0, 8  ], "texture": "#door", "cullface": "north"},
+				"south": {"uv": [8.5, 0, 10, 8 ], "texture": "#door", "cullface": "south"},
+				"west":  {"uv": [1, 0, 9, 8    ], "texture": "#door", "cullface": "west"},
+				"east":  {"uv": [9, 0, 1, 8    ], "texture": "#door"}
+			}
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/fence/spruce_fence_inventory",
+	"textures": {
+		"0": "texture",
+		"particle": "texture"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0, 0, 0]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0, 0, 0]
+		}
+	}
+}

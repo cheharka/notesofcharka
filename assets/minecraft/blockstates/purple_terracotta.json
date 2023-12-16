@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "minecraft:block/purple_terracotta"
+      },
+      {
+        "model": "minecraft:block/purple_terracotta",
+        "z": 180
+      },
+      {
+        "model": "minecraft:block/purple_terracotta",
+        "x": 180
+      },
+      {
+        "model": "minecraft:block/purple_terracotta",
+        "y": 180
+      }
+    ]
+  }
+}

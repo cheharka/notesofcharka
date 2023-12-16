@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/parent/door_top_left",
+  "textures": {
+    "door": "minecraft:block/acacia_door",
+"particle": "minecraft:block/acacia_planks"
+  }
+}

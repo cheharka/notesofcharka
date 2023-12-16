@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/parent/fence_post",
+  "textures": {
+    "particle": "minecraft:block/cherry_planks",
+    "texture": "minecraft:block/cherry_fence"
+  }
+}

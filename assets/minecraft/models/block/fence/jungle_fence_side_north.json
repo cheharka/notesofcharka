@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/parent/fence_side_north",
+  "textures": {
+    "texture": "minecraft:block/jungle_fence"
+  }
+}

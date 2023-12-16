@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/parent/door_top_left",
+  "textures": {
+    "door": "minecraft:block/jungle_door",
+"particle": "minecraft:block/jungle_planks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/parent/door_bottom_right",
+  "textures": {
+    "door": "minecraft:block/bamboo_door",
+"particle": "minecraft:block/bamboo_planks"
+  }
+}

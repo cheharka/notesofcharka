@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/parent/door_bottom_right",
+  "textures": {
+    "door": "minecraft:block/birch_door",
+"particle": "minecraft:block/birch_planks"
+  }
+}
