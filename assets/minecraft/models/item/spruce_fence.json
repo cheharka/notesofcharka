@@ -1,5 +1,4 @@
 {
-	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/fence/spruce_fence_inventory",
 	"textures": {
 		"0": "texture",
