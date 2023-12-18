@@ -12,12 +12,6 @@ jobs:
       shell: bash
       run: |
         echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
-    - uses: DamianReeves/write-file-action@master
-      with:
-        path: version
-        contents: |
-            ${{ steps.vars.outputs.sha_short }}
-        write-mode: overwrite
     - uses: LSVH/gha-replace-placeholders@v1
       with:
         include: |
@@ -29,11 +23,11 @@ jobs:
       with:
         type: "zip"
         filename: "notesofcharka.zip"
-        exclusions: "*.git* LICENSE *.zip *.md .gitignore"
+        exclusions: "*.git* LICENSE *.zip *.md .gitignore version"
     - name: Upload Release
       uses: ncipollo/release-action@v1.12.0
       with:
-        artifacts: "notesofcharka.zip, version"
+        artifacts: "notesofcharka.zip"
         tag: latest
         allowUpdates: true
         draft: false
