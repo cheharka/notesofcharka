@@ -24,12 +24,6 @@ jobs:
          pack.mcmeta
         placeholders: |
           %%VERSION%%=${{ steps.vars.outputs.sha_short }}
-    - name: Zip Version Release
-      uses: thedoctor0/zip-release@0.7.1
-      with:
-        type: "zip"
-        filename: "notesofcharka-${{ steps.vars.outputs.sha_short }}.zip"
-        exclusions: "*.git* LICENSE *.md .gitignore"
     - name: Zip Release
       uses: thedoctor0/zip-release@0.7.1
       with:
@@ -39,7 +33,7 @@ jobs:
     - name: Upload Release
       uses: ncipollo/release-action@v1.12.0
       with:
-        artifacts: "rp.zip, rp-${{ steps.vars.outputs.sha_short }}.zip, version"
+        artifacts: "notesofcharka.zip, version"
         tag: latest
         allowUpdates: true
         draft: false
