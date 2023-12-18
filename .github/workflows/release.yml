@@ -1,0 +1,49 @@
+name: Create Archive
+on: [push]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, 'release')"
+    steps:
+    - uses: actions/checkout@master
+    - name: Declare some variables
+      id: vars
+      shell: bash
+      run: |
+        echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+    - uses: DamianReeves/write-file-action@master
+      with:
+        path: version
+        contents: |
+            ${{ steps.vars.outputs.sha_short }}
+        write-mode: overwrite
+    - uses: LSVH/gha-replace-placeholders@v1
+      with:
+        include: |
+         pack.mcmeta
+        placeholders: |
+          %%VERSION%%=${{ steps.vars.outputs.sha_short }}
+    - name: Zip Version Release
+      uses: thedoctor0/zip-release@0.7.1
+      with:
+        type: "zip"
+        filename: "notesofcharka-${{ steps.vars.outputs.sha_short }}.zip"
+        exclusions: "*.git* LICENSE *.md .gitignore"
+    - name: Zip Release
+      uses: thedoctor0/zip-release@0.7.1
+      with:
+        type: "zip"
+        filename: "notesofcharka.zip"
+        exclusions: "*.git* LICENSE *.zip *.md .gitignore"
+    - name: Upload Release
+      uses: ncipollo/release-action@v1.12.0
+      with:
+        artifacts: "rp.zip, rp-${{ steps.vars.outputs.sha_short }}.zip, version"
+        tag: latest
+        allowUpdates: true
+        draft: false
+        makeLatest: true
+        removeArtifacts: true
+        token: ${{ secrets.GITHUB_TOKEN }}
+      
