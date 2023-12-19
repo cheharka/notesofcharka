@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/parent/custom_crop",
+  "textures": {
+    "east": "minecraft:block/potatoes_stage3_1",
+    "west": "minecraft:block/potatoes_stage3_0",
+    "north": "minecraft:block/potatoes_stage3_1",
+    "south": "minecraft:block/potatoes_stage3_0"
+  }
+}
