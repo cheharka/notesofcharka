@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/parent/cross_fruit_farmland",
+  "textures": {
+    "cross": "minecraft:block/farmland/melon_attached_cross",
+    "fruit": "minecraft:block/farmland/melon_attached"
+  }
+}

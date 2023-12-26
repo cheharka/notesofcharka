@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "minecraft:block/farmland/pumpkin_attached",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "minecraft:block/farmland/pumpkin_attached",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraft:block/farmland/pumpkin_attached",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "minecraft:block/farmland/pumpkin_attached"
+    }
+  }
+}
