@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/parent/cross_farmland",
   "textures": {
-    "cross": "minecraft:block/farmland/pumpkin_stem"
+    "cross": "minecraft:block/farmland/pumpkin_stage1"
   }
 }
